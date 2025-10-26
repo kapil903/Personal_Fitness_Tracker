@@ -1,0 +1,29 @@
+# Node
+node_modules/
+
+# Backend
+/backend/node_modules/
+/backend/.env
+
+# Frontend (create-react-app)
+/frontend/node_modules/
+/frontend/build/
+/frontend/.env
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+*.log
+.env
+npm-debug.log*
+.DS_Store
+
+# OS generated files
+desktop.ini
+$RECYCLE.BIN/
+
+# OneDrive
+~$*

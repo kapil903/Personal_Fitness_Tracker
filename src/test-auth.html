@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitTracker - Auth Test</title>
+    <link rel="stylesheet" href="styles/auth.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .test-info {
+            background: #f0f9ff;
+            border: 2px solid #0ea5e9;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .test-info h3 {
+            color: #0369a1;
+            margin-bottom: 10px;
+        }
+        .test-info p {
+            color: #0c4a6e;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-card">
+            <div class="test-info">
+                <h3>🧪 Authentication Test Page</h3>
+                <p><strong>Test these interactions:</strong></p>
+                <p>• Click anywhere in input field area to focus</p>
+                <p>• Touch/click input fields on mobile</p>
+                <p>• Text should auto-select when focused</p>
+                <p>• Visual feedback on touch/click</p>
+            </div>
+            
+            <div class="auth-header">
+                <div class="logo">
+                    <i class="fas fa-dumbbell"></i>
+                    <h1>FitTracker</h1>
+                </div>
+                <p>Your Personal Fitness Companion</p>
+            </div>
+            
+            <div class="auth-forms">
+                <!-- Login Form -->
+                <form class="auth-form active" id="loginForm">
+                    <h2>Welcome Back</h2>
+                    <div class="input-group">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="loginEmail" placeholder="Email address" required autocomplete="email" autocapitalize="off" spellcheck="false">
+                    </div>
+                    <div class="input-group">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="loginPassword" placeholder="Password" required autocomplete="current-password" autocapitalize="off" spellcheck="false">
+                    </div>
+                    <button type="submit" class="auth-btn">Sign In</button>
+                    <p class="auth-switch">
+                        Don't have an account? 
+                        <span onclick="toggleAuth()">Sign up</span>
+                    </p>
+                </form>
+
+                <!-- Register Form -->
+                <form class="auth-form" id="registerForm">
+                    <h2>Create Account</h2>
+                    <div class="input-group">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="registerName" placeholder="Full name" required autocomplete="name" autocapitalize="words" spellcheck="false">
+                    </div>
+                    <div class="input-group">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="registerEmail" placeholder="Email address" required autocomplete="email" autocapitalize="off" spellcheck="false">
+                    </div>
+                    <div class="input-group">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="registerPassword" placeholder="Password" required autocomplete="new-password" autocapitalize="off" spellcheck="false">
+                    </div>
+                    <div class="input-group">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="registerConfirmPassword" placeholder="Confirm password" required autocomplete="new-password" autocapitalize="off" spellcheck="false">
+                    </div>
+                    <button type="submit" class="auth-btn">Create Account</button>
+                    <p class="auth-switch">
+                        Already have an account? 
+                        <span onclick="toggleAuth()">Sign in</span>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/auth.js"></script>
+</body>
+</html>
